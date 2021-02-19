@@ -39,18 +39,6 @@ function setup(){
 
     //create slingshot
     slingShot = new SlingShot(this.polygon, {x: 250, y: 200});
-
-    //render 
-    var render = Render.create({
-        element: document.body,
-        engine: engine,
-        options: {
-            width: 1200,
-            height: 700,
-            wireframes: true
-        }
-    });
-    Render.run(render);
     Engine.run(engine);
 }
 function draw(){
